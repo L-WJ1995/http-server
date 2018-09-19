@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    *{
+  box-sizing:border-box;
+  color:white
+  margin:0;
+}
+
+
+#sliding_switch{
+  display:none;
+}
+
+label{
+  position:relative;
+}
+
+
+.sliding_switch-1{
+  width:64px;
+  height:24px;
+  background-image:url(./picture/sliding_switch-3.png),url(./picture/sliding_switch-1.png),url(./picture/sliding_switch-2.png);
+  background-size:auto; 
+  position:absolute;
+
+  border-radius:100px;
+  background-size:150% 150%; 
+  background-position:center;
+  background-repeat:no-repeat;
+  box-shadow:0px 0px 0px 2px  #D3D3D3 inset;
+  background-origin:content-box;
+  transition:background-size 0.3s,box-shadow 0.3s;
+}
+
+.sliding_switch-2{
+  width:20px;
+  height:20px;
+  background-color:white;
+  border-radius:65px;
+  position:absolute;
+  top:2px;
+  left:2px;
+  box-shadow:0.5px 5px 5px  0px #D3D3D3;
+  transition:width 0.3s linear,left 0.3s linear,margin-left 0.3s linear;
+}
+
+label:active > .sliding_switch-1{
+  background-size:0% 0%,150% 150%,150% 150%; 
+}
+
+label:active > .sliding_switch-2{
+  width:30px;
+}
+
+#sliding_switch:checked + label > .sliding_switch-1{
+  box-shadow:0px 0px 0px 2px  #7FFF00 inset;
+  background-size:0% 0%,0% 0%,150% 150%; 
+}
+
+#sliding_switch:checked + label >  .sliding_switch-2{
+ 
+  left:42px;
+
+}
+
+#sliding_switch:checked + label:active >  .sliding_switch-2{
+  margin-left: -10px;
+  
+}
+
+
+
+
+
+
+
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <input type="checkbox" id="sliding_switch">     
+  <label for="sliding_switch"> 
+     <div class="sliding_switch-1"></div>   
+     <div class="sliding_switch-2"></div>
+  </label> 
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>视差滚动</title>
+  <style>
+    *{
+      margin:0;
+      font-size:0;
+      box-sizing:border-box;
+
+}
+    html,body{
+      height:100%;
+      width:100%;
+
+}
+
+
+    .q1{
+      height:200%;
+      width:250%;
+}
+
+    .q3{
+      display: inline-block;
+      height:100%;
+      width:20%;
+      border:2px solid black;
+      vertical-align:top;
+}
+    .q2{
+      display: inline-block;
+      width: 80%;
+      height:100%;
+}
+
+    .aa,.bb{
+      display: inline-block;
+      height: 50%;
+      width:100%;
+
+}
+    .a-1{
+      background-image: url(./picture/1.png),url(./picture/1.1.png),url(./picture/2.2.png),url(./picture/2.png),url(./picture/a.png),url(./picture/b.png),url(./picture/c.png),url(./picture/d.png),url(./picture/e.png),url(./picture/f.png);
+}
+    .b-1{
+      background-image: url(./picture/1.1.png),url(./picture/1.png);
+}
+    .c-1{
+      background-image: url(./picture/2.png),url(./picture/2.2.png);
+}
+    .d-1{
+      background-image: url(./picture/2.2.png),url(./picture/2.png);
+}
+    .q3{
+      background-image: url(./picture/1.jpg);
+}
+    
+    .q3{
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      background-position:72.5% 0;
+}
+    
+      div>p{
+      font-size: 3vh;
+      width:70%;
+      height:70%;
+      overflow:auto;
+      margin:20% auto;
+      background-attachment:fixed;
+      background-repeat: no-repeat;
+      background-image: url(./picture/2.jpg);
+      background-position:72.5% 0;
+}
+    
+    .a,.b,.c,.d{
+      height:100%;
+      width:50%;
+      display:inline-block;
+      text-align: center;
+}
+    
+    
+    .c-1,.d-1{
+      display:inline-block;
+      width:460px;
+      height:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-attachment:fixed;
+      background-size:auto 70%,auto 70%;
+      transition:background-position 2s,background-size 2s;
+}
+    
+    .a-1{
+      display:inline-block;
+      width:460px;
+      height:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-attachment:fixed;
+      background-size:auto 70%,auto 70%,auto 70%,auto 70%,auto 10%,auto 10%,auto 10%,auto 10%,auto 10%,auto 10%,auto 10%;
+      transition:background-position 2s,background-size 2s;
+}
+
+
+
+    .b-1{
+      display:inline-block;
+      width:450px;
+      height:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-attachment:fixed;
+      background-size:auto 30%,auto 30%;
+      transition:background-position 2s,background-size 2s;
+}
+    
+    .a-1:hover{
+       background-position:60% 20%,60% 90%,40% 20%,40% 90%,40% 48%,50% 48%,60% 48%,40% 60%,50% 60%,60% 60%;
+       background-size:auto 30%,auto 30%,auto 30%,auto 30%,auto 5%,auto 5%,auto 5%,auto 5%,auto 5%,auto 5%;
+}
+    .b-1:hover{
+       background-position:30% 10%,50% 90%;
+       background-size:auto 80%,auto 50%;
+       width:55%;
+    
+}
+    .c-1:hover{
+       background-position:center,55% center;
+       background-size:auto 40%,auto 40%;
+       width:400px;
+}
+    .d-1:hover{
+       background-image: url(./picture/2.png),url(./picture/2.2.png);
+       background-position:center 40%,center 60%;
+       background-size:auto 40%,auto 40%;
+}
+   
+    .span-1{
+      display:block;
+      color:black;
+      font-size:3vh;
+      height:0px;
+}
+    
+  </style>
+</head>
+<body>
+<div class="q1">
+  <div class="q2">
+    <div class="aa">
+      <div class="a">
+        <span class="span-1">1.尝试将鼠标移动到大手机（transition）<br>2.尝试滚动条上下左右滑动  </span> 
+        <div class="a-1"></div>
+      </div>
+      <div class="b">
+        <div class="b-1"></div>
+      </div>
+    </div>
+    <div class="bb"> 
+      <div class="c">
+        <div class="c-1"></div>       
+      </div>
+      <div class="d">
+        <div class="d-1"></div>   
+      </div>
+    </div>
+  </div> 
+  <div class="q3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, ducimus reprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assumenda vitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, dreprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assvitae libero. Eaque nostrum magni architecto, corporis doloremque!
+    </p>
+  </div> 
+</div>
+</body>
+</html>

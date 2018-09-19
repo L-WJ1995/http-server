@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style type="text/css">
+      *{
+  margin:0;
+  padding:0;
+  xfont-size: 0;
+  box-sizing:border-box;
+
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+header{
+  margin-top:100px;
+  width: 100%;
+  height: 500px;
+  xbackground-color: tan;
+  position: relative;
+  transform-style: preserve-3d;
+  transform:rotateX(-15deg) rotateY(320deg) ;
+  transition:all 30s linear;
+}
+header>div{
+  position: absolute;
+  width: 128px;
+  height:128px; 
+  xopacity:1;
+  top:50%;
+  left:50%;
+  color:white;
+  line-height:0px; 
+  transition:all 30s ;
+}
+
+header>div div{
+  display: inline-block;
+  width:100%;
+  height:calc(100% / 16);
+  vertical-align: top;
+}
+header>div:nth-of-type(1){
+  background-image: linear-gradient;
+  transform:rotateX(90deg) translateZ(64px);
+}
+header>div:nth-of-type(2){
+
+ transform:rotateX(90deg) translateZ(-64px);
+}
+header>div:nth-of-type(3){
+  transform:translateZ(64px);
+}
+header>div:nth-of-type(4){
+
+  transform:translateZ(-64px);
+}
+header>div:nth-of-type(5){
+
+  transform:rotateY(90deg) translateZ(64px) rotate(-180deg) rotateX(180deg);
+}
+header>div:nth-of-type(6){
+
+  transform:rotateY(90deg) translateZ(-64px) rotate(-180deg) rotateX(180deg);
+}
+
+
+
+
+
+
+
+body:hover header {
+  
+    transform:rotateX(600deg) rotateY(630deg) ;
+    transition:all 30s  ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div:nth-of-type(1) div:nth-of-type(1){
+  background-image: linear-gradient(to right,rgb(8,255,0),rgb(8,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(2){
+  background-image: linear-gradient(to right,rgb(24,255,0),rgb(24,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(3){
+  background-image: linear-gradient(to right,rgb(40,255,0),rgb(40,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(4){
+  background-image: linear-gradient(to right,rgb(56,255,0),rgb(56,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(5){
+  background-image: linear-gradient(to right,rgb(72,255,0),rgb(72,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(6){
+  background-image: linear-gradient(to right,rgb(88,255,0),rgb(88,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(7){
+  background-image: linear-gradient(to right,rgb(104,255,0),rgb(104,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(8){
+  background-image: linear-gradient(to right,rgb(120,255,0),rgb(120,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(9){
+  background-image: linear-gradient(to right,rgb(136,255,0),rgb(136,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(10){
+  background-image: linear-gradient(to right,rgb(152,255,0),rgb(152,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(11){
+  background-image: linear-gradient(to right,rgb(168,255,0),rgb(168,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(12){
+  background-image: linear-gradient(to right,rgb(184,255,0),rgb(184,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(13){
+  background-image: linear-gradient(to right,rgb(200,255,0),rgb(200,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(14){
+  background-image: linear-gradient(to right,rgb(216,255,0),rgb(216,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(15){
+  background-image: linear-gradient(to right,rgb(232,255,0),rgb(232,248,248));
+}
+div:nth-of-type(1) div:nth-of-type(16){
+  background-image: linear-gradient(to right,rgb(248,255,0),rgb(248,248,248));
+}
+
+
+
+
+div:nth-of-type(2) div:nth-of-type(1){
+  background-image: linear-gradient(to right,rgb(8,8,8),rgb(8,8,248));
+}
+div:nth-of-type(2) div:nth-of-type(2){
+  background-image: linear-gradient(to right,rgb(24,8,8),rgb(24,0,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(3){
+  background-image: linear-gradient(to right,rgb(40,8,8),rgb(40,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(4){
+  background-image: linear-gradient(to right,rgb(56,8,8),rgb(56,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(5){
+  background-image: linear-gradient(to right,rgb(72,8,8),rgb(72,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(6){
+  background-image: linear-gradient(to right,rgb(88,8,8),rgb(88,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(7){
+  background-image: linear-gradient(to right,rgb(104,8,8),rgb(104,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(8){
+  background-image: linear-gradient(to right,rgb(120,8,8),rgb(120,8,248));
+}
+div:nth-of-type(2) div:nth-of-type(9){
+  background-image: linear-gradient(to right,rgb(136,8,8),rgb(136,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(10){
+  background-image: linear-gradient(to right,rgb(152,8,8),rgb(152,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(11){
+  background-image: linear-gradient(to right,rgb(168,8,8),rgb(168,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(12){
+  background-image: linear-gradient(to right,rgb(184,8,8),rgb(184,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(13){
+  background-image: linear-gradient(to right,rgb(200,8,8),rgb(200,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(14){
+  background-image: linear-gradient(to right,rgb(216,8,8),rgb(216,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(15){
+  background-image: linear-gradient(to right,rgb(232,8,8),rgb(232,8,248));
+}
+
+div:nth-of-type(2) div:nth-of-type(16){
+  background-image: linear-gradient(to right,rgb(248,8,8),rgb(248,0,248));
+}
+
+
+div:nth-of-type(3) div:nth-of-type(1){
+  background-image: linear-gradient(to right,rgb(255,248,0),rgb(255,248,255));
+}
+div:nth-of-type(3) div:nth-of-type(2){
+  background-image: linear-gradient(to right,rgb(255,232,0),rgb(255,232,255));
+}
+div:nth-of-type(3) div:nth-of-type(3){
+  background-image: linear-gradient(to right,rgb(255,216,0),rgb(255,216,255));
+}
+div:nth-of-type(3) div:nth-of-type(4){
+  background-image: linear-gradient(to right,rgb(255,200,0),rgb(255,200,255));
+}
+div:nth-of-type(3) div:nth-of-type(5){
+  background-image: linear-gradient(to right,rgb(255,184,0),rgb(255,184,255));
+}
+div:nth-of-type(3) div:nth-of-type(6){
+  background-image: linear-gradient(to right,rgb(255,168,0),rgb(255,168,255));
+}
+div:nth-of-type(3) div:nth-of-type(7){
+  background-image: linear-gradient(to right,rgb(255,152,0),rgb(255,152,255));
+}
+div:nth-of-type(3) div:nth-of-type(8){
+  background-image: linear-gradient(to right,rgb(255,136,0),rgb(255,136,255));
+}
+div:nth-of-type(3) div:nth-of-type(9){
+  background-image: linear-gradient(to right,rgb(255,120,0),rgb(255,120,255));
+}
+div:nth-of-type(3) div:nth-of-type(10){
+  background-image: linear-gradient(to right,rgb(255,104,0),rgb(255,104,255));
+}
+div:nth-of-type(3) div:nth-of-type(11){
+  background-image: linear-gradient(to right,rgb(255,88,0),rgb(255,88,255));
+}
+div:nth-of-type(3) div:nth-of-type(12){
+  background-image: linear-gradient(to right,rgb(255,72,0),rgb(255,72,255));
+}
+div:nth-of-type(3) div:nth-of-type(13){
+  background-image: linear-gradient(to right,rgb(255,56,0),rgb(255,56,255));
+}
+div:nth-of-type(3) div:nth-of-type(14){
+  background-image: linear-gradient(to right,rgb(255,40,0),rgb(255,32,255));
+}
+div:nth-of-type(3) div:nth-of-type(15){
+  background-image: linear-gradient(to right,rgb(255,24,0),rgb(255,24,255));
+}
+div:nth-of-type(3) div:nth-of-type(16){
+  background-image: linear-gradient(to right,rgb(255,8,0),rgb(255,8,255));
+}
+
+
+div:nth-of-type(4) div:nth-of-type(1){
+  background-image: linear-gradient(to right,rgb(8,248,8),rgb(8,248,255));
+}
+div:nth-of-type(4) div:nth-of-type(2){
+  background-image: linear-gradient(to right,rgb(8,232,8),rgb(8,232,255));
+}
+div:nth-of-type(4) div:nth-of-type(3){
+  background-image: linear-gradient(to right,rgb(8,216,8),rgb(8,216,255));
+}
+div:nth-of-type(4) div:nth-of-type(4){
+  background-image: linear-gradient(to right,rgb(8,200,8),rgb(8,200,255));
+}
+div:nth-of-type(4) div:nth-of-type(5){
+  background-image: linear-gradient(to right,rgb(8,184,8),rgb(8,184,255));
+}
+div:nth-of-type(4) div:nth-of-type(6){
+  background-image: linear-gradient(to right,rgb(8,168,8),rgb(8,168,255));
+}
+div:nth-of-type(4) div:nth-of-type(7){
+  background-image: linear-gradient(to right,rgb(8,152,8),rgb(8,152,255));
+}
+div:nth-of-type(4) div:nth-of-type(8){
+  background-image: linear-gradient(to right,rgb(8,136,8),rgb(8,136,255));
+}
+div:nth-of-type(4) div:nth-of-type(9){
+  background-image: linear-gradient(to right,rgb(8,120,8),rgb(8,120,255));
+}
+div:nth-of-type(4) div:nth-of-type(10){
+  background-image: linear-gradient(to right,rgb(8,104,8),rgb(8,104,255));
+}
+div:nth-of-type(4) div:nth-of-type(11){
+  background-image: linear-gradient(to right,rgb(8,88,8),rgb(8,88,255));
+}
+div:nth-of-type(4) div:nth-of-type(12){
+  background-image: linear-gradient(to right,rgb(8,72,8),rgb(8,72,255));
+}
+div:nth-of-type(4) div:nth-of-type(13){
+  background-image: linear-gradient(to right,rgb(8,56,8),rgb(8,56,255));
+}
+div:nth-of-type(4) div:nth-of-type(14){
+  background-image: linear-gradient(to right,rgb(8,40,8),rgb(8,32,255));
+}
+div:nth-of-type(4) div:nth-of-type(15){
+  background-image: linear-gradient(to right,rgb(8,24,8),rgb(8,24,255));
+}
+div:nth-of-type(4) div:nth-of-type(16){
+  background-image: linear-gradient(to right,rgb(8,8,8),rgb(8,8,255));
+}
+
+
+
+
+
+div:nth-of-type(5) div:nth-of-type(1){
+  background-image: linear-gradient(to right,rgb(8,248,248),rgb(248,248,248));
+}
+div:nth-of-type(5) div:nth-of-type(2){
+  background-image: linear-gradient(to right,rgb(8,232,248),rgb(248,232,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(3){
+  background-image: linear-gradient(to right,rgb(8,216,248),rgb(248,216,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(4){
+  background-image: linear-gradient(to right,rgb(8,200,248),rgb(248,200,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(5){
+  background-image: linear-gradient(to right,rgb(8,184,248),rgb(248,184,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(6){
+  background-image: linear-gradient(to right,rgb(8,168,248),rgb(248,158,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(7){
+  background-image: linear-gradient(to right,rgb(8,152,248),rgb(248,152,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(8){
+  background-image: linear-gradient(to right,rgb(8,136,248),rgb(248,136,248));
+}
+div:nth-of-type(5) div:nth-of-type(9){
+  background-image: linear-gradient(to right,rgb(8,120,248),rgb(248,120,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(10){
+  background-image: linear-gradient(to right,rgb(8,104,248),rgb(248,104,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(11){
+  background-image: linear-gradient(to right,rgb(8,88,248),rgb(248,88,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(12){
+  background-image: linear-gradient(to right,rgb(8,72,248),rgb(248,72,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(13){
+  background-image: linear-gradient(to right,rgb(8,56,248),rgb(248,56,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(14){
+  background-image: linear-gradient(to right,rgb(8,40,248),rgb(248,40,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(15){
+  background-image: linear-gradient(to right,rgb(8,24,248),rgb(248,24,248));
+}
+
+div:nth-of-type(5) div:nth-of-type(16){
+  background-image: linear-gradient(to right,rgb(8,8,248),rgb(248,8,248));
+}
+
+
+
+
+div:nth-of-type(6) div:nth-of-type(1){
+  background-image: linear-gradient(to right,rgb(8,248,6),rgb(248,248,0));
+}
+div:nth-of-type(6) div:nth-of-type(2){
+  background-image: linear-gradient(to right,rgb(8,232,8),rgb(248,232,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(3){
+  background-image: linear-gradient(to right,rgb(8,216,8),rgb(248,216,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(4){
+  background-image: linear-gradient(to right,rgb(8,200,8),rgb(248,200,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(5){
+  background-image: linear-gradient(to right,rgb(8,184,8),rgb(248,184,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(6){
+  background-image: linear-gradient(to right,rgb(8,168,8),rgb(248,158,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(7){
+  background-image: linear-gradient(to right,rgb(8,152,8),rgb(248,152,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(8){
+  background-image: linear-gradient(to right,rgb(8,136,8),rgb(248,136,0));
+}
+div:nth-of-type(6) div:nth-of-type(9){
+  background-image: linear-gradient(to right,rgb(8,120,8),rgb(248,120,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(10){
+  background-image: linear-gradient(to right,rgb(8,104,8),rgb(248,104,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(11){
+  background-image: linear-gradient(to right,rgb(8,88,8),rgb(248,88,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(12){
+  background-image: linear-gradient(to right,rgb(8,72,8),rgb(248,72,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(13){
+  background-image: linear-gradient(to right,rgb(8,56,8),rgb(248,56,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(14){
+  background-image: linear-gradient(to right,rgb(8,40,8),rgb(248,40,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(15){
+  background-image: linear-gradient(to right,rgb(8,24,8),rgb(248,24,0));
+}
+
+div:nth-of-type(6) div:nth-of-type(16){
+  background-image: linear-gradient(to right,rgb(8,8,8),rgb(248,8,0));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+</body>
+</html>
