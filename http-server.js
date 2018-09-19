@@ -4,7 +4,7 @@ const path = require("path")
 const http = require("http")
 const fs = require('fs')
 const mime = require('mime');
-const server_path = "C:/Users/Administrator/Desktop/qqq"
+const server_path = "C:/Users/Administrator/Desktop/qqq" //此处地址为服务端根目录
 
 function notfound(res) {
     res.writeHead(404,{
